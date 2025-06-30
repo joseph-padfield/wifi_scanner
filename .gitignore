@@ -1,0 +1,49 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# PyCharm project files
+.idea/
+
+# Logs and outputs
+*.log
+*.out
+*.bak
+*.swp
+data/*.json
+data/*.csv
+data/*.txt
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints (if used)
+.ipynb_checkpoints/
+
+# Environment config
+.env
+.env.*
+
+# Backup and temp files
+*.~*
+*~
+*.tmp
+
+# Tools
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+
+# pytest cache
+.pytest_cache/
+.cache/
