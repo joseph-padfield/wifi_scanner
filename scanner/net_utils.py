@@ -24,7 +24,7 @@ def get_active_interface():
 
 def get_interface_info(interface):
     """
-    Rretrieves the IPv4 address and subnet mask for a given network interface.
+    Retrieves the IPv4 address and subnet mask for a given network interface.
 
     Args:
         interface (str): Name of the network interface.
@@ -73,11 +73,11 @@ def detect_local_cidr():
     """
     interface = get_active_interface()
     if not interface:
-        raise RuntimeError("No active netork interface found.")
+        raise RuntimeError("No active network interface found.")
     
     ip, netmask = get_interface_info(interface)
     if not ip or not netmask:
-        raise RuntimeError(f"Could not get IP/netmask for {interface}")
+        raise RuntimeError(f"No active network interface")
     
     cidr = get_cidr_range(ip, netmask)
 
